@@ -1,7 +1,4 @@
-// export const data = {
-//     YT_LINK: 'https://www.googleapis.com/youtube/v3/videos?part=snippet&part=statistics&chart=mostPopular&maxResults=50',
-//     API_KEY : 'AIzaSyAOZscEu5-yDqdJypgvLRbNaKoM6QY_D7I'
-// }
+
 
 export const data = [
     // Tech
