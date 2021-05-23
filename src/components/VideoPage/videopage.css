@@ -1,0 +1,108 @@
+.video-page-inner-div {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+.video-page-player-div {
+  width: 90%;
+  margin: 0 auto;
+  height: 20rem;
+}
+.react-player {
+  width: 100%;
+  height: 100%;
+}
+.video-page-video-info {
+  text-align: left;
+  padding-left: 3rem;
+}
+.video-page-info-title {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+.video-page-info-author {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  display: flex;
+}
+.video-page-info-view-data {
+  display: flex;
+  color: gray;
+}
+.video-page-info-date {
+  margin-top: 0;
+  margin-left: 1rem;
+}
+.video-page-buttons {
+  display: flex;
+  text-align: left;
+  margin-left: 3rem;
+}
+
+.video-page-like-button {
+  background-color: white;
+  border: 1px solid gainsboro;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  letter-spacing: 1px;
+}
+.video-page-like-button:hover {
+  cursor: pointer;
+  background-color: red;
+  color: white;
+  border: 1px solid red;
+  transition: 0.3s;
+}
+.video-page-liked-button {
+  background-color: white;
+  border: 1px solid gainsboro;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: red;
+  letter-spacing: 1px;
+}
+.video-page-liked-button:hover {
+  cursor: pointer;
+  background-color: red;
+  color: white;
+  border: 1px solid red;
+  transition: 0.3s;
+}
+
+.video-page-playlist-button {
+  margin-left: 1rem;
+  background-color: white;
+  border: 1px solid gainsboro;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  letter-spacing: 1px;
+}
+.video-page-playlist-button:hover {
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+/* for Mobile */
+@media screen and (max-width: 800px) {
+  .video-page-main-div {
+    width: 100%;
+  }
+  .video-page-inner-div {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 3rem;
+  }
+  .video-page-player-div {
+    width: 100%;
+    height: auto;
+  }
+  .react-player {
+    width: 95%;
+    float: left;
+    max-height: 10rem;
+  }
+}

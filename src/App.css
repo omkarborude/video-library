@@ -1,13 +1,26 @@
-.App {
-  text-align: center;
-}
 
-* {
-  margin: 0;
-  border: 0;
-}
-.main{
+.App {
   display: flex;
 }
+.left-side-bar-main-div{
+  width: 20%;
+}
 
 
+.middle-main-div{
+  width: 80%;
+  text-align: center;
+  height: 20rem;
+  border-top-left-radius: 2rem;
+}
+
+@media only screen and (max-width: 800px){
+  
+  .left-side-bar-main-div{
+    width: 15%;
+  }
+  .middle-main-div{
+    width: 85%;
+  }
+  
+}

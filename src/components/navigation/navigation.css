@@ -1,0 +1,126 @@
+.navigation-inner-div{
+      display: flex;
+      justify-content: space-around;
+      border-bottom: 1px solid gainsboro;
+      padding-bottom: 1rem;
+}
+.search-div{
+    display: flex;
+    width: 50%;
+    
+}
+.search-input{
+    padding: 0.5rem;
+    width: 90%;
+    background-color: #f5f5f5;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    border: none;
+}
+.search-input-btn-div{
+    padding: 0.5rem;
+    width: 10%;
+    color: white;
+    background-color: red;
+    border-top-right-radius: 0.8rem;
+    border-bottom-right-radius: 0.8rem;
+}
+.search-input-btn-div:hover{
+    cursor: pointer;
+}
+.search-input-btn-div:active{
+    background-color: orangered;
+}
+.clear-search{
+    color: gray;
+    margin-left: 1rem;
+    padding: 0.5rem;
+    background-color: white;
+    border: none;
+}
+.clear-search:hover{
+    cursor: pointer;
+    color: black;
+}
+
+.navigation-right-div{
+    display: flex;
+    padding: 0.5rem;
+}
+.navigation-right-option{
+    font-size: 1.2rem;
+    margin-left: 1rem;
+}
+.navigation-right-option:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.navigation-author-option-div{
+    padding: 0.5rem;
+    border-bottom: 1px solid gainsboro;
+}
+
+.btn-author{
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+    background-color: white;
+    border: 1px solid gainsboro;
+    border-radius: 1rem;
+    color: gray;
+}
+.btn-author:hover{
+    cursor: pointer;
+    color: black;
+    border: 1px solid black;
+}
+.btn-author-active{
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+    background-color: white;
+    border-radius: 1rem;
+    background-color: red;
+    border: none;
+    color: white;
+    transition: 0.3s;
+    box-shadow: 0px 10px 10px 3px rgba(22, 21, 21, 0.1);
+}
+.account-div{
+    
+}
+
+@media only screen and (max-width: 800px) {
+
+    .navigation-author-option-div{
+        border-bottom: 1px solid gainsboro;
+        overflow-x: auto;
+        display: flex;
+    }
+    
+    
+    .search-div{
+        width: 100%;
+       
+    }
+    .clear-search{
+        padding-left: 0;
+        margin-left: 0.2rem;
+    }
+    .navigation-right-option{
+        margin-left: 0;
+    }
+    
+.navigation-right-div{
+    font-size: 0.7rem;
+    padding-left: 0;
+}
+.navigation-right-option{
+    font-size: 1.2rem;
+    margin-left: 1rem;
+}
+.navigation-inner-div{
+   justify-content: flex-start;
+   
+}
+
+}

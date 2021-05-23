@@ -1,0 +1,27 @@
+.playlist-div {
+  border-top: 1px solid gainsboro;
+}
+.playlist-cad-list-div {
+  display: flex;
+  flex-wrap: wrap;
+}
+.playlist-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.playlist-name span {
+  margin-left: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: gray;
+}
+.btnkk {
+  padding: 0.5rem;
+  border: 1px solid gainsboro;
+  padding-left: 1rem;
+  background-color: ghostwhite;
+}
+.button {
+  background-color: red;
+}

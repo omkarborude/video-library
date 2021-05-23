@@ -1,0 +1,11 @@
+.navigation-main-div{
+    padding: 1rem;
+    
+}
+.videolist-main-div{
+
+
+    display: flex;
+    flex-wrap: wrap;
+    
+}
