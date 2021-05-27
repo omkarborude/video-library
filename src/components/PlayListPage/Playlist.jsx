@@ -2,12 +2,13 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./playlist.css";
 import { useData, useAuth } from "../export";
-
+import { RemoveUserPlaylist } from "../../Utils/apiRequest";
 import { PlaylistVideoCard } from "./PlaylistVideoCard";
 
 export const Playlist = () => {
   const {
     state: { playlist },
+    dispatch,
   } = useData();
   const { userId, isUserloggedIn } = useAuth();
 
@@ -21,6 +22,11 @@ export const Playlist = () => {
             <p className="playlist-name">
               {name}
               <span>({videos.length})</span>
+              <button
+                onClick={() => RemoveUserPlaylist(userId, playlistId, dispatch)}
+              >
+                <i class="fas fa-times"></i>
+              </button>
             </p>
 
             <div className="playlist-cad-list-div">
