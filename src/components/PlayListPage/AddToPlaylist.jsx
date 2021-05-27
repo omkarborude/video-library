@@ -35,14 +35,13 @@ export const AddToPlsylist = ({ _id }) => {
               : navigate("/login")
           }
         >
-          save
+          Save
         </a>
       )}
       {showAddPlaylistCard && (
         <AddToPlaylistCard
           _id={_id}
           setshowAddPlaylistCard={setshowAddPlaylistCard}
-          showAddPlaylistCard={showAddPlaylistCard}
         />
       )}
     </>
