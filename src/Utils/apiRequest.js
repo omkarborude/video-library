@@ -19,7 +19,6 @@ export const getLikedVideos = async (userId, dispatch) => {
   } = await axios.get(
     `https://videolibback.omkarborude8354.repl.co/liked-video/${userId}`
   );
-  console.log(response);
   const videoList = response.map((item) => item._id);
   dispatch({ type: "LOAD_LIKED_VIDEOS", payload: videoList });
 };
@@ -46,7 +45,6 @@ export const getHistoryVideos = async (userId, dispatch) => {
   } = await axios.get(
     `https://videolibback.omkarborude8354.repl.co/history/${userId}`
   );
-  console.log(response);
   const videoList = response.map((item) => item._id);
   dispatch({ type: "LOAD_USER_HISTORY", payload: videoList });
 };
@@ -77,8 +75,9 @@ export const getUserPlaylist = async (userId, dispatch) => {
   } = await axios.get(`${API}/playlist/${userId}`);
   playlist = playlist.map((list) => ({
     ...list,
-    videos: list.videos.map((item) => item._id),
+    videos: list.videos.map((video) => video._id),
   }));
+  console.log(playlist);
   dispatch({ type: "LOAD_PLAYLIST", payload: playlist });
 };
 
