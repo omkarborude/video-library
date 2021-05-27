@@ -7,11 +7,7 @@ import {
 import { videoExistsAlready } from "../../Utils/arrayFunctions";
 import "./addtoplaylist.css";
 
-export const AddToPlaylistCard = ({
-  _id,
-  setshowAddPlaylistCard,
-  showAddPlaylistCard,
-}) => {
+export const AddToPlaylistCard = ({ _id, setshowAddPlaylistCard }) => {
   const {
     state: { playlist },
     dispatch,
