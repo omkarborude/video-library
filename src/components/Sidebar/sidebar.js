@@ -54,7 +54,7 @@ export const SideBar = () => {
         <Link to="/playlist" className="link-no-style">
           <div className="sidebar-option-div">
             <i class="fas fa-list-ul"></i>
-            <i className="sidebar-option-tag">PlayList</i>
+            <i className="sidebar-option-tag">Playlist</i>
           </div>
         </Link>
 

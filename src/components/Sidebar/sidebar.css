@@ -80,15 +80,16 @@
     background-color: white;
   }
   .sidebar-tag-div {
-    font-size: 0.8rem;
-    background-color: rebeccapurple;
+    font-size: 0.7rem;
     padding-top: 1rem;
+  }
+  .sidebar-tag-div span {
+    float: left;
   }
   .sidebar-option-div {
     padding: 0;
     display: flex;
     flex-direction: column;
-    background-color: yellow;
     padding-right: 0.3rem;
     text-align: center;
     margin-top: 1rem;
@@ -96,6 +97,7 @@
   .sidebar-option-tag {
     margin-left: 0;
     font-size: 1rem;
+    padding-right: 0.2rem;
   }
   .fa-home,
   .fa-history,
