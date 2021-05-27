@@ -31,6 +31,16 @@ export const dataReducer = (state, { type, payload }) => {
           ? state.likedVideos.filter((video) => video !== payload)
           : state.likedVideos.concat(payload),
       };
+
+    case "CREAT_UPDATE_NEW_PLAYLIST":
+      if (payload.name) {
+        return {
+          ...state,
+          playlist: state.playlist.concat(payload),
+        };
+      } else {
+        return { ...state };
+      }
     case "UPDATE_PLAYLIST_DATA":
       const list = state.playlist.find(
         (item) => item._id === payload.playlistId
