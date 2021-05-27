@@ -80,13 +80,16 @@
     background-color: white;
   }
   .sidebar-tag-div {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
+    background-color: rebeccapurple;
+    padding-top: 1rem;
   }
   .sidebar-option-div {
     padding: 0;
     display: flex;
     flex-direction: column;
-    padding-left: 0;
+    background-color: yellow;
+    padding-right: 0.3rem;
     text-align: center;
     margin-top: 1rem;
   }
