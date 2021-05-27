@@ -1,11 +1,18 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./playlist.css";
+import { toast } from "react-toastify";
 import { useData, useAuth } from "../export";
 import { RemoveUserPlaylist } from "../../Utils/apiRequest";
 import { PlaylistVideoCard } from "./PlaylistVideoCard";
 
 export const Playlist = () => {
+  useEffect(() => {
+    toast.dark("Loading Playlist!", {
+      position: "top-right",
+      autoClose: 2000,
+    });
+  }, []);
   const {
     state: { playlist },
     dispatch,

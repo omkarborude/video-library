@@ -10,3 +10,4 @@ export { VideoPage } from "./VideoPage/VideoPage";
 export { LikedVideosPage } from "./LikedVideos/LikedVideosPage";
 export { History } from "./HistoryPage/History";
 export { Playlist } from "./PlayListPage/Playlist";
+export { Toast } from "./Toast/Toast";

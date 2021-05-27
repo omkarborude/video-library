@@ -1,6 +1,7 @@
 import "./videopage.css";
 import "../../App.css";
 import { useEffect } from "react";
+import { toast } from "react-toastify";
 import { addRemoveLikedVideo } from "../../Utils/apiRequest";
 import { useNavigate, useParams } from "react-router";
 import { useAuth, useData } from "../export";
@@ -9,6 +10,12 @@ import { AddToPlsylist } from "../PlayListPage/AddToPlaylist";
 const ProductsArryExist = (array, id) => array.some((item) => item === id);
 
 export const VideoPage = () => {
+  useEffect(() => {
+    toast.dark("Loadind!", {
+      position: "top-right",
+      autoClose: 2000,
+    });
+  }, []);
   const navigate = useNavigate();
 
   const { videoId } = useParams();

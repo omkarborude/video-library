@@ -1,6 +1,6 @@
 const ProductsArryExist = (array, id) => array.some((item) => item === id);
 
-export const dataReducer = (state, { type, payload }) => {
+export const dataReducer = (state, { type, payload, value }) => {
   switch (type) {
     case "SET_VIDEOLIST":
       return { ...state, videoList: payload };
@@ -81,6 +81,9 @@ export const dataReducer = (state, { type, payload }) => {
 
     case "CLEAR_HISTORY":
       return { ...state, history: payload };
+
+    case "TOGGLE_TOAST":
+      return { ...state, toast: { value: value, message: payload } };
 
     default:
       return state;

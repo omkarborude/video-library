@@ -1,4 +1,6 @@
 import axios from "axios";
+import { toast } from "react-toastify";
+
 const API = "https://videolibback.omkarborude8354.repl.co";
 // load data
 export const getVideoList = async (dispatch) => {
@@ -24,6 +26,10 @@ export const getLikedVideos = async (userId, dispatch) => {
 };
 
 export const addRemoveLikedVideo = async (_id, userId, dispatch) => {
+  toast.success("Updating Likes!", {
+    position: "top-right",
+    autoClose: 3000,
+  });
   const {
     data: { response },
   } = await axios.post(
@@ -58,6 +64,10 @@ export const addtoHistory = async (_id, userId, dispatch) => {
 };
 
 export const clearHistory = async (userId, dispatch) => {
+  toast.warn("Clearing Hisotry!", {
+    position: "top-right",
+    autoClose: 3000,
+  });
   const {
     data: { response },
   } = await axios.delete(
@@ -89,6 +99,10 @@ export const createNewUserPlaylist = async (
   setplaylistName
 ) => {
   if (playlistName) {
+    toast.success("Creating Playlist!", {
+      position: "top-right",
+      autoClose: 3000,
+    });
     let {
       data: { playlist },
     } = await axios.post(`${API}/playlist/${userId}`, {
@@ -107,6 +121,10 @@ export const AddRemoveVideoPlaylist = async (
   videoId,
   dispatch
 ) => {
+  toast.warn("Updating Playlist!", {
+    position: "top-right",
+    autoClose: 3000,
+  });
   const { status } = await axios.post(
     `${API}/playlist/${userId}/playlist/${playlistId}`,
     { _id: videoId }
@@ -118,6 +136,10 @@ export const AddRemoveVideoPlaylist = async (
 };
 
 export const RemoveUserPlaylist = async (userId, playlistId, dispatch) => {
+  toast.dark("Deleting Playlist!", {
+    position: "top-right",
+    autoClose: 3000,
+  });
   const { status } = await axios.put(
     `${API}/playlist/${userId}/playlist/${playlistId}`
   );

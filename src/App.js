@@ -1,6 +1,8 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import { useEffect } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import {
   SideBar,
   History,
@@ -70,6 +72,7 @@ function App() {
           <PrivateRoute path="/playlist" element={<Playlist />} />
         </Routes>
       </div>
+      <ToastContainer />
     </div>
   );
 }
