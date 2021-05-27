@@ -43,7 +43,7 @@ function App() {
   }, [isUserloggedIn]);
 
   useEffect(() => {
-    if (isUserloggedIn && userId) {
+    if (userId) {
       getUserPlaylist(userId, dispatch);
     }
   }, [isUserloggedIn]);
