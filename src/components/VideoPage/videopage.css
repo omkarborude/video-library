@@ -82,7 +82,7 @@
 }
 .video-page-playlist-button:hover {
   cursor: pointer;
-
+  border: 1px solid red;
   transition: 0.3s;
 }
 

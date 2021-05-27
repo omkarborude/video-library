@@ -7,6 +7,7 @@
   margin-top: 1rem;
   padding: 1rem;
   margin-bottom: 1rem;
+  padding-bottom: 2rem;
 }
 .plalist-video-card-img-div {
   width: 45%;
@@ -35,4 +36,21 @@
 }
 .btn-playlist-remove-video:active {
   border: 1px solid white;
+}
+
+/* For Mobile */
+@media only screen and (max-width: 800px) {
+  .plalist-video-card-div {
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .plalist-video-card-img-div {
+    width: 90%;
+    margin: 0 auto;
+  }
 }

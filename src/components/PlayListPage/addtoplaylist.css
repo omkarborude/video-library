@@ -45,6 +45,9 @@
   border-radius: 0.6rem;
   color: white;
 }
+.btn-creat-new-playlist:active {
+  background-color: orangered;
+}
 .btn-close-creatplaylist-card {
   margin-top: 1rem;
   background-color: white;
@@ -58,4 +61,18 @@
   background-color: black;
   color: white;
   transition: 0.3s;
+}
+
+/* For Mobile */
+@media only screen and (max-width: 800px) {
+  .playlist-card-inner-div {
+    padding: 0.5rem;
+  }
+  .creatnewlist-input {
+    width: 60%;
+    font-size: 0.7rem;
+  }
+  .btn-creat-new-playlist {
+    padding: 0.2rem;
+  }
 }
