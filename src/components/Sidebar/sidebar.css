@@ -6,6 +6,7 @@
   background-color: #f8f9fa;
   width: 20%;
   bottom: 10px;
+
   top: 8px;
 }
 .sidebar-tag-div {
@@ -75,6 +76,8 @@
   .sidebar-inner-main-div {
     width: 15%;
     margin-left: -0.5rem;
+    border-right: 1px solid gainsboro;
+    background-color: white;
   }
   .sidebar-tag-div {
     font-size: 0.8rem;
