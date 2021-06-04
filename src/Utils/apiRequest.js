@@ -10,7 +10,7 @@ export const getVideoList = async (dispatch) => {
     } = await axios.get("https://videolibback.omkarborude8354.repl.co/videos");
     dispatch({ type: "SET_VIDEOLIST", payload: videos });
   } catch (error) {
-    console.error(error);
+    alert(error);
   }
 };
 
@@ -73,7 +73,6 @@ export const clearHistory = async (userId, dispatch) => {
   } = await axios.delete(
     `https://videolibback.omkarborude8354.repl.co/history/${userId}`
   );
-  console.log(response);
   dispatch({ type: "CLEAR_HISTORY", payload: response });
 };
 
@@ -87,7 +86,6 @@ export const getUserPlaylist = async (userId, dispatch) => {
     ...list,
     videos: list.videos.map((video) => video._id),
   }));
-  console.log(playlist);
   dispatch({ type: "LOAD_PLAYLIST", payload: playlist });
 };
 

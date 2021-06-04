@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { useAuth } from "../export";
 import axios from "axios";
+console.log();
 
 export const Login = () => {
   const [state, setState] = useState({ email: "", password: "" });
@@ -32,6 +33,7 @@ export const Login = () => {
         "https://videolibback.omkarborude8354.repl.co/users/login",
         state
       );
+
       if (status === 200) {
         localStorage.setItem(
           "authToken",
@@ -43,7 +45,6 @@ export const Login = () => {
       } else {
         navigate(path === null ? "/login" : path.from);
       }
-      console.log(status);
     } catch (error) {
       const { status, data } = error.response;
 

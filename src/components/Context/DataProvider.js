@@ -19,7 +19,6 @@ export const DataProvider = ({ children }) => {
   };
 
   const [state, dispatch] = useReducer(dataReducer, initialValue);
-  console.log(state);
   return (
     <DataContext.Provider value={{ state, dispatch }}>
       {children}

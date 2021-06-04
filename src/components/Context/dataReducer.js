@@ -1,5 +1,4 @@
 const ProductsArryExist = (array, id) => array.some((item) => item === id);
-
 export const dataReducer = (state, { type, payload, value }) => {
   switch (type) {
     case "SET_VIDEOLIST":
@@ -24,7 +23,6 @@ export const dataReducer = (state, { type, payload, value }) => {
       return { ...state, searchValue: "" };
 
     case "TOGGLE_LIKED_VIDEOS":
-      console.log("hapenning");
       return {
         ...state,
         likedVideos: state.likedVideos.some((videoId) => videoId === payload)

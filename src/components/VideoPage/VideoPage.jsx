@@ -23,7 +23,6 @@ export const VideoPage = () => {
     state: { videoList, likedVideos },
     dispatch,
   } = useData();
-  console.log(likedVideos);
   const { userDetails, isUserloggedIn, userId } = useAuth();
 
   const {
