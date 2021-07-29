@@ -8,7 +8,7 @@
 ### Demo Credentials
 ```
 Email:-    test@gmail.com
-password:- password
+password:- testing
 ```
 
 ###### **Here is the link to the [live demo](https://neo-tube.herokuapp.com/)**
