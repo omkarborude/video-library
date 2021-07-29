@@ -69,11 +69,6 @@ export const SideBar = () => {
             </i>
           </div>
         </Link>
-
-        <div className="sidebar-option-div">
-          <i class="fas fa-home"></i>
-          <i className="sidebar-option-tag">Watch Later*</i>
-        </div>
       </div>
     </div>
   );
