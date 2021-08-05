@@ -5,10 +5,15 @@ import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { useAuth } from "../export";
 import axios from "axios";
-console.log();
+import { guestLogin } from "./guestLogin";
 
 export const Login = () => {
   const [state, setState] = useState({ email: "", password: "" });
+  const [guestState, setguestState] = useState({
+    email: "test@gmail.com",
+    password: "testing",
+  });
+
   const [errors, setErrors] = useState({ email: "", password: "" });
   const [showPassword, setShowPassword] = useState(false);
 
@@ -102,6 +107,16 @@ export const Login = () => {
               <button className="btn-signup">SIGNUP</button>
             </Link>
           </div>
+        </div>
+
+        <div className="login-as-guest-div">
+          <button
+            onClick={() => {
+              guestLogin(guestState, dispatch, navigate, setErrors, path);
+            }}
+          >
+            Login as Guest
+          </button>
         </div>
 
         <div className="error-div">

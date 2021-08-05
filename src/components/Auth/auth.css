@@ -82,6 +82,22 @@
   transition: 0.3s;
 }
 
+.login-as-guest-div {
+  padding: 0.5rem;
+  margin-top: 00.5rem;
+}
+.login-as-guest-div button {
+  padding: 0.2rem;
+  background-color: transparent;
+  border: 1px solid gainsboro;
+}
+.login-as-guest-div button:hover {
+  cursor: pointer;
+  color: white;
+  border: 1px solid black;
+  background-color: black;
+  transition: 0.2s;
+}
 @media only screen and (max-width: 800px) {
   .login-main-div form {
     width: 80%;
