@@ -1,0 +1,52 @@
+.playlist-div {
+  border-top: 1px solid gainsboro;
+}
+.playlist-cad-list-div {
+  display: flex;
+  flex-wrap: wrap;
+}
+.playlist-name {
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding: 1rem;
+}
+.playlist-name button {
+  float: right;
+  font-size: 1.2rem;
+  border: none;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.09), 0 10px 10px rgba(0, 0, 0, 0.09);
+}
+.playlist-name button:hover {
+  background-color: red;
+  cursor: pointer;
+  transition: 0.3s;
+  color: white;
+}
+.playlist-name button:active {
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.09), 0 0 0 rgba(0, 0, 0, 0.09);
+}
+.fa-times {
+  padding: 0.2rem;
+}
+.playlist-name span {
+  margin-left: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: gray;
+}
+.btnkk {
+  padding: 0.5rem;
+  border: 1px solid gainsboro;
+  padding-left: 1rem;
+  background-color: ghostwhite;
+}
+.button {
+  background-color: red;
+}
+
+/* for Mobile */
+@media screen and (max-width: 800px) {
+}

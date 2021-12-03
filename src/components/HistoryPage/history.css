@@ -1,0 +1,12 @@
+.btn-clear-history{
+    background-color: white;
+    padding: 0.5rem;
+    border: 1px solid gainsboro;
+}
+.btn-clear-history:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+    border: 1px solid black;
+}

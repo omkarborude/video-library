@@ -1,0 +1,116 @@
+.sidebar-inner-main-div {
+  display: flex;
+  flex-direction: column;
+  border-top-left-radius: 1rem;
+  position: fixed;
+  background-color: #f8f9fa;
+  width: 20%;
+  bottom: 10px;
+
+  top: 8px;
+}
+.sidebar-tag-div {
+  width: 100%;
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.sidebar-tag-div span {
+  margin-left: 0.3rem;
+}
+.fa-youtube {
+  color: red;
+}
+
+.sidebar-profile-div {
+  width: 100%;
+  text-align: center;
+  margin-top: 1.8rem;
+  border-bottom: 1px solid gainsboro;
+}
+.fa-user-circle {
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.sidebar-option-main-div {
+  margin-top: 1rem;
+}
+
+.sidebar-option-div {
+  display: flex;
+  margin: 0 auto;
+  padding: 1rem;
+  color: black;
+  padding-left: 3rem;
+  font-weight: 300;
+}
+.sidebar-option-div:hover {
+  background-color: #ffebeb;
+  color: red;
+  cursor: pointer;
+}
+.sidebar-option-tag {
+  margin-left: 1rem;
+  font-size: 1.5rem;
+  font-style: normal;
+}
+.fa-home,
+.fa-history,
+.fa-list-ul,
+.fa-thumbs-up {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.sidebar-likevideo-length {
+  margin-left: 0.3rem;
+  background-color: red;
+  font-size: 0.9rem;
+  color: white;
+  border-radius: 50%;
+  padding: 0.1rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .sidebar-inner-main-div {
+    width: 16%;
+    text-align: left;
+    border-right: 1px solid gainsboro;
+    background-color: white;
+  }
+  .sidebar-tag-div {
+    font-size: 0.7rem;
+    padding-top: 1rem;
+  }
+  .sidebar-tag-div span {
+    float: left;
+  }
+  .sidebar-option-div {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    padding-right: 0.3rem;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  .sidebar-option-tag {
+    margin-left: 0;
+    font-size: 1rem;
+    padding-right: 0.2rem;
+  }
+  .fa-home,
+  .fa-history,
+  .fa-list-ul,
+  .fa-thumbs-up {
+    text-align: center;
+    font-size: 1rem;
+  }
+  .sidebar-profile-div {
+    display: flex;
+    flex-direction: column;
+  }
+  .sidebar-likevideo-length {
+    display: none;
+  }
+}

@@ -1,0 +1,56 @@
+.plalist-video-card-div {
+  margin-left: 5rem;
+  width: 28rem;
+  height: 10rem;
+  border: 1px solid gainsboro;
+  display: flex;
+  margin-top: 1rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 2rem;
+}
+.plalist-video-card-img-div {
+  width: 45%;
+  height: 100%;
+}
+.plalist-video-card-img {
+  width: 100%;
+  height: 100%;
+}
+.plalist-video-card-info-div {
+  margin-left: 0.5rem;
+  text-align: left;
+}
+.btn-playlist-remove-video {
+  background-color: white;
+  border: 1px solid gainsboro;
+  padding: 0.5rem;
+  letter-spacing: 1px;
+}
+.btn-playlist-remove-video:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  transition: 0.3s;
+  border: 1px solid black;
+}
+.btn-playlist-remove-video:active {
+  border: 1px solid white;
+}
+
+/* For Mobile */
+@media only screen and (max-width: 800px) {
+  .plalist-video-card-div {
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .plalist-video-card-img-div {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
